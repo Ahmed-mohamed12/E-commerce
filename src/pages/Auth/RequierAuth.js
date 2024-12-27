@@ -6,7 +6,7 @@ import axios from "axios";
 import { basic, userUrl } from "../../api";
 import Page403 from "./Page403";
 
-export default function RequireAuth({alowedRole}) {
+export default function RequireAuth({ alowedRole }) {
   const Navigate = useNavigate();
   const [user, setUser] = useState("");
   // const [isLoading, setIsLoading] = useState(false);
@@ -36,5 +36,15 @@ export default function RequireAuth({alowedRole}) {
     // eslint-disable-next-line
   }, [token]);
 
-  return token ? (user === "" ? (<Loading />) :alowedRole.includes( user.role )? (<Outlet />) :( <Page403 role={user.role}/>)) : Navigate("/login", { replace: true })
+  return token ? (
+    user === "" ? (
+      <Loading />
+    ) : alowedRole.includes(user.role) ? (
+      <Outlet />
+    ) : (
+      <Page403 role={user.role} />
+    )
+  ) : (
+    Navigate("/login", { replace: true })
+  );
 }

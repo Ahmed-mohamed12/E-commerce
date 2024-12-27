@@ -64,15 +64,12 @@ export default function Topbar() {
     <>
       <div className="Top-bar d-flex align-items-center justify-content-between">
         <div className="d-flex align-items-center gap-5">
-          <h3>E-commerce</h3>
+        <Link to={"/"}  style={{ color: "black", cursor: "pointer" }}> <h3>E-commerce</h3></Link>
           <IoIosMenu
             style={{ fontSize: "30px", color: "blue", cursor: "pointer" }}
             onClick={handelMenue}
           />
         </div>
-        <div className="d-flex gap-3">
-
-<Link to={"/"}>Home Page</Link>
 
         <Dropdown>
           <Dropdown.Toggle variant="primary" id="dropdown-basic">
@@ -86,8 +83,6 @@ export default function Topbar() {
           </Dropdown.Menu>
         </Dropdown>
         </div>
-
-      </div>
       
     </>
   );

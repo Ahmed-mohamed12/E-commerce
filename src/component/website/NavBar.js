@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container, Form, Modal } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link,} from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { BsCart3 } from "react-icons/bs";
-import { basic, cats, pro } from "../../api";
+import { basic, cats } from "../../api";
 import axios from "axios";
 import { useContext } from "react";
-
-// import Cookie from "cookie-universal";
 import "./NavBar.css";
 import StringSlice from "../../Healpers/StringSlice";
 import SkeltonShow from "../../Healpers/SkeltonShow";
@@ -16,6 +14,7 @@ import { Cart } from "../../context/CartChangerContext";
 import { IoIosCloseCircle } from "react-icons/io";
 import PlusMinus from "../../pages/dashboard/website/PlusMinus";
 // import"../../pages/dashboard//website/Home.css"
+import Cookie from "cookie-universal";
 export default function NavBar() {
   // ----------State----------------
   const [categories, setCategories] = useState([]);
@@ -23,13 +22,16 @@ export default function NavBar() {
   const [products, setProducts] = useState([]);
   const width = useContext(ScreenSizeContext);
   const [show, setShow] = useState(false);
-  const [getDataAgain, setGetDataAgain] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [count, setCount] = useState(1);
+
+ 
   //------------------- get Cart context -----------------
   const { isChange } = useContext(Cart);
-
+// token-----------------------------------------------------
+const cookie = Cookie();
+const token = cookie.get("e-commerce");
   // ------------------get categories-----------------------------
   useEffect(() => {
     async function getCategories() {
@@ -159,9 +161,9 @@ export default function NavBar() {
               <div onClick={handleShow} className="col-3">
                 <BsCart3 style={{ fontSize: "40px", color: "#000" }} />
               </div>
-              <Link  className="col-3">
+              {!token&&<Link to={'/register'} className="col-3">
                 <FaUserCircle style={{ fontSize: "40px", color: "blue" }} />
-              </Link>
+              </Link>}
             </div>
           </div>
 

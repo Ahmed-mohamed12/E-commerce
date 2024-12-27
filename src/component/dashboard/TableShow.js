@@ -55,7 +55,6 @@ export default function TableShow(props) {
   const filterSearshByDate = filteredData.filter(
     (item) => TransformDate(item.created_at) === date
   );
-  console.log(filteredDataByDate);
   const searchedData =
     date.length !== 0
       ? search.length > 0
