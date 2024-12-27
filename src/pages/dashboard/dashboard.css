@@ -1,0 +1,35 @@
+.dashboard{
+    min-height: 100vh;
+    background-color: #F7FBFa;
+}
+.custom-progress{
+    width: 100%;
+    height: 9px;
+    border-radius: 4px;
+    background-color: rgb(214, 212, 212);
+}
+.inner-progress{
+    position: relative;
+    background-color:#56b6ff;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.inner-progress::after{
+    
+    content: attr(percent);
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: rgb(27, 3, 3);
+    color: white;
+   width: 38px;
+   height: 23px; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
+   border-radius: 3px;
+    
+}

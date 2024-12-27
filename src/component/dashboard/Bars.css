@@ -1,0 +1,76 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .Top-bar {
+     position: fixed;
+     top: 0;
+     /* left: 0; */
+     width: 100%;
+     height: 70px;
+     background-color: white;
+     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+     z-index: 2;
+     padding: 0 20px;
+ }
+
+ .Top-bar div p {
+     cursor: pointer;
+ }
+
+ /* .fa-bars{cursor: pointer;background-color: #038edc;} */
+ .side-bar {
+
+     top: 70px;
+     left: 0;
+     background-color: white;
+     z-index: 1;
+     height: 100vh;
+     box-shadow: 0 0 0 1 rgba(0, 0, 0, 0.1);
+     padding: 0 12px;
+     transition: 0.5s;
+ }
+
+ 
+
+ .side-bar-link {
+     width: 100%;
+     border-radius: 18px;
+     color: #000 !important;
+     background-color: white;
+     font-size: 22px;
+     transition: 0.5s;
+     margin: 8px 0px;
+     padding: 10px 8px 10px 15px;
+     display: flex;
+     text-decoration: none;
+ }
+ .side-bar-link span{
+text-decoration: none !important;
+     padding: 0 !important;
+     border: none;border-style :none !important
+ }
+ .side-bar-link span a{
+text-decoration: none !important;
+     padding: 0 !important;
+ }
+ .side-bar-link.active {
+     color: #038edc !important;
+     background-color: #f2f3f2;
+     
+ }
+ .side-bar-link:hover>span,.side-bar-link:hover>svg{
+     color: #038edc !important;
+     /* background-color: #f2f3f2; */
+     
+ }
+ .side-bar-link span,.side-bar-link svg{
+    transition: 0.2s;
+ }
+ .side-bar-link:hover > span,.side-bar-link:hover >svg{
+     color: black;
+
+ }
+ .act{color: #000 !important}
