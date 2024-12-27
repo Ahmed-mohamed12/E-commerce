@@ -6,7 +6,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import { useContext, useEffect, useState } from "react";
 import { Menue } from "../../context/MenuContext";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { basic, LogOutUrl, userUrl } from "../../api";
 import Cookie from "cookie-universal";
@@ -70,10 +70,9 @@ export default function Topbar() {
             onClick={handelMenue}
           />
         </div>
-        {/* <div style={{fontSize:"20px"}} >
+        <div className="d-flex gap-3">
 
-        <NavLink  className={"btn btn-primary "} to={"/"}>{name}</NavLink>
-      </div> */}
+<Link to={"/"}>Home Page</Link>
 
         <Dropdown>
           <Dropdown.Toggle variant="primary" id="dropdown-basic">
@@ -86,6 +85,8 @@ export default function Topbar() {
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
+        </div>
+
       </div>
       
     </>
