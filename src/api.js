@@ -1,5 +1,5 @@
 
-export const basic="https://backend-e-commerce-production-d518.up.railway.app/api"
+export const basic="https://backend-e-commerce-production-25ff.up.railway.app/api"
 export const registerUrl="register"
 export const LoginUrl="login"
 export const LogOutUrl="logout"
