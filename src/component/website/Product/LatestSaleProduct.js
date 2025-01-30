@@ -28,7 +28,7 @@ export default function LatestSaleProduct() {
     <Product key={index} 
       title={product.title}
       description={product.description}
-       img={product?.images?.[0]?.image}
+       img={"https://backend-e-commerce-production-25ff.up.railway.app"+product?.images?.[0]?.image}
       sale
       price={product.price}
       discount={product.discount}
