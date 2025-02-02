@@ -44,7 +44,7 @@ const {setIsChange}=useContext(Cart);
       .then((res) => {
         setProductImages(
           res.data[0].images.map((img) => {
-            return { original: img.image, thumbnail: img.image };
+            return { original:"https://backend-e-commerce-production-a459.up.railway.app"+ img.image, thumbnail:"https://backend-e-commerce-production-a459.up.railway.app"+ img.image };
           })
         );
         setProduct(res.data[0]);

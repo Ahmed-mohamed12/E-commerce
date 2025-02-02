@@ -31,7 +31,7 @@ export default function Product(props) {
             sale
               </p>)}
               <img
-                src={"https://backend-e-commerce-production-a459.up.railway.app"+props.img}
+                src={props.img}
                 alt=".."
                 className="img-fluid"
               />

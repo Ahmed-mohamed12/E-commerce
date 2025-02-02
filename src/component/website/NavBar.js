@@ -87,10 +87,10 @@ const token = cookie.get("e-commerce");
         />
 
         <img
-          src={product.images[0].image}
-          height={"80px"}
+          src={"https://backend-e-commerce-production-a459.up.railway.app"+product.images[0].image}
+          height={"100px"}
           style={{ objectFit: "cover" }}
-          className="rounded col-sm-3 col-12"
+          className="rounded col-sm-3 col-md-4 col-12"
           alt="img"
         />
         <div className="col-sm-6 col-12">
