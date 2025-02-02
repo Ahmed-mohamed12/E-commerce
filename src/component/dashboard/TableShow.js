@@ -72,7 +72,7 @@ export default function TableShow(props) {
           return (
             <td key={key2}>
               {item2.key === "image" ? (
-                <img alt="img" width="40px" src={"https://backend-e-commerce-production-8024.up.railway.app"+item1[item2.key]} />
+                <img alt="img" width="40px" src={"https://backend-e-commerce-production-a459.up.railway.app"+item1[item2.key]} />
               ) : item2.key === "images" ? (
                 <div className="d-flex align-items-center justfy-content-start gap-2 flex-wrap ">
                   {item1[item2.key].map((e) => (

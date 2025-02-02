@@ -31,7 +31,7 @@ export default function ShowTopRated() {
     <TopRated key={index} 
       title={product.title}
       description={product.description}
-       img={product?.images?.[0]?.image}
+       img={"https://backend-e-commerce-production-a459.up.railway.app"+product?.images?.[0]?.image}
       price={product.price}
       discount={product.discount}
       rating={product.rating}

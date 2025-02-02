@@ -179,7 +179,7 @@ export default function AddProduct() {
     <div key={key} className=" border p-2 w-100">
       <div className="d-flex align-items-center justify-content-between gap-2 ">
         <div className="d-flex align-items-center justify-content-start  ">
-          <img src={"https://backend-e-commerce-production-25ff.up.railway.app"+URL.createObjectURL(img)} width="90px" alt="img"></img>
+          <img src={"https://backend-e-commerce-production-a459.up.railway.app"+URL.createObjectURL(img)} width="90px" alt="img"></img>
           <div>
             <p className="mb-1">{img.name}</p>
             <p>

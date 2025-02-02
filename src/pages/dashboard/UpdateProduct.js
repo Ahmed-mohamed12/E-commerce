@@ -383,7 +383,7 @@ async function handelEdit(e) {
                             className="d-flex align-items-center justify-content-center flex-column gap-2 py-3 mb-2 rounded w-100
                             flex-column
                             " style={{border:"2px gray dashed",cursor:"pointer"}}>
-                                <img src={require('../../assets/upload.jpeg')} alt="upload"
+                                <img src={"https://backend-e-commerce-production-a459.up.railway.app"+require('../../assets/upload.jpeg')} alt="upload"
                                 width={'100px'} style={{filter:" grayscale(100%)"}}/>
                                 <p className="mb-0" style={{color:'gray'}}>upload images</p>
                             </div>
