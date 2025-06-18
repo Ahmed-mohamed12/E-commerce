@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-DEMO LIVE: https://e-commerce-pi-blue.vercel.app/<h1></h1>
+DEMO LIVE:<h1> https://e-commerce-pi-blue.vercel.app/</h1>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
