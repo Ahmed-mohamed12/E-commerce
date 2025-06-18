@@ -1,0 +1,20 @@
+.hand{
+    background-image: url("../../../assets/images/matger.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.matger{
+    background-image: url("../../../assets/images/shampo.jpeg");
+    background-position: right;
+    background-size: cover;
+    height: 40vh;
+}
+.custome-search{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+.custome-search{
+box-shadow: 0 0 10px 0 rgba(0,0,0, 0,1) !important;
+border: rgba(0, 0, 0, 0.1) !important;
+outline: rgba(0, 0, 0, 0.1) !important;
+}
