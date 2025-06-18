@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-DEMO LIVE:<h1>https://react-ecommerceone.netlify.app/</h1>
+DEMO LIVE: https://e-commerce-pi-blue.vercel.app/<h1></h1>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
