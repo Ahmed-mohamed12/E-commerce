@@ -27,12 +27,6 @@ export default function ShowTopRated() {
     }
     getProducts();
   }, []);
-   const fakeProducts = [
-      { id: 1, name: 'لابتوب ديل', price: 2500, rating: 4.5 },
-      { id: 2, name: 'آيفون 14', price: 4000, rating: 4.8 },
-      { id: 3, name: 'سماعات سوني', price: 800, rating: 4.7 }
-    ];
-   setProducts(fakeProducts);
  console.log(products);
   const productsShow = products.map((product,index) => (
     <TopRated key={index} 
