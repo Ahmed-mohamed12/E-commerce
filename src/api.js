@@ -1,5 +1,5 @@
 
-export const basic="https://backend-ecommerce-vwx4.vercel.app"
+export const basic="https://backend-ecommerce-vwx4.vercel.app/api"
 export const registerUrl="register"
 export const LoginUrl="login"
 export const LogOutUrl="logout"
