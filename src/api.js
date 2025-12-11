@@ -1,5 +1,5 @@
 
-export const basic="http://127.0.0.1:8000/api"
+export const basic="https://backend-ecommerce-vwx4.vercel.app"
 export const registerUrl="register"
 export const LoginUrl="login"
 export const LogOutUrl="logout"
